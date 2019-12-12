@@ -8,6 +8,7 @@ import java.util.Set;
 
 public class ResultBean implements Serializable {
     private static final long serialVersionUID = 2041275512219239990L;
+    
 
     private HashSet<Point> history = new HashSet<>();
     private Point currentPoint;
