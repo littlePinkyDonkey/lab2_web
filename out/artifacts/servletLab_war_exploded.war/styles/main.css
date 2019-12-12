@@ -1,0 +1,57 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html,body{
+    height: 100%;
+}
+body{
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to top right, aqua, mistyrose) no-repeat;
+}
+#main_page{
+    width: 500px;
+    height: 530px;
+    padding: 10px;
+}
+#main_page #header{
+    font-family: cursive;
+    font-style: oblique;
+    font-size: 1.1em;
+    color: salmon;
+}
+#main_page .inner{
+    align-self: center;
+    width: 350px;
+    height: 400px;
+    padding: 10px;
+    border: black 2px dotted;
+    margin-top: 10px;
+}
+#canvas_block{
+    margin-top: 10px;
+    margin-left: 45px;
+    display: flex;
+    justify-content: center;
+}
+.block{
+    margin-top: 20px;
+    display: flex;
+}
+.x_value{
+    outline: none;
+    margin-left: 10px;
+    background-color: whitesmoke;
+}
+#y_value,
+#r_value{
+    width: auto;
+    margin-right:5px;
+    align-self:center;
+}
+#submit_block{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
