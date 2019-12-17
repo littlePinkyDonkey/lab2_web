@@ -3,15 +3,13 @@ package beans;
 import model.Point;
 
 import java.io.Serializable;
-import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
 public class ResultBean implements Serializable {
     private static final long serialVersionUID = 2041275512219239990L;
 
-    private HashSet<Point> history = new HashSet<>();
+    private Set<Point> history = new HashSet<>();
     private Point currentPoint;
 
     public ResultBean(){
@@ -26,6 +24,7 @@ public class ResultBean implements Serializable {
     }
 
     public void setCurrentPoint(Point currentPoint) {
-        this.history.add(currentPoint);
+        if (currentPoint != null)
+            this.history.add(currentPoint);
     }
 }

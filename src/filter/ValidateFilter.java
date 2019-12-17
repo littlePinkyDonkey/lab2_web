@@ -8,7 +8,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
-import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.List;
 
@@ -23,12 +22,12 @@ public class ValidateFilter implements Filter {
 
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
-        HttpSession session = ((HttpServletRequest)servletRequest).getSession();
-        String x_value = (String)session.getAttribute("x");
-        String y_value = (String)session.getAttribute("y");
-        String r_value = (String)session.getAttribute("r");
-
         try{
+            HttpSession session = ((HttpServletRequest)servletRequest).getSession();
+            String x_value = (String)session.getAttribute("x");
+            String y_value = (String)session.getAttribute("y");
+            String r_value = (String)session.getAttribute("r");
+
             double x = Double.parseDouble(x_value);
             double y = Double.parseDouble(y_value);
             double r = Double.parseDouble(r_value);
@@ -37,7 +36,7 @@ public class ValidateFilter implements Filter {
                 session.setAttribute("point",new Point(x,y,r));
                 filterChain.doFilter(servletRequest,servletResponse);
             }else throw new ClassCastException();
-        }catch (ClassCastException e){
+        }catch (NullPointerException | ClassCastException e){
             ((HttpServletResponse)servletResponse).sendRedirect("lab2");
         }
 

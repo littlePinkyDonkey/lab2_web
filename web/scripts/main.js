@@ -4,10 +4,13 @@ let x;
 let y;
 let r;
 
-window.onload = () => $('#execute').prop('disabled',true);
-
-function resetDisable() {
-    $('#execute').prop('disabled',false);
+function reset() {
+    x = 0;
+    y = 0;
+    r = 0;
+    document.getElementById('y_value').value = '';
+    document.getElementById('r_value').value = '';
+    document.querySelector('input[type="radio"]:checked').checked = false;
 }
 
 function getValues() {
@@ -24,17 +27,13 @@ function validate() {
 
 function send() {
     if (validate()) {
-        let element = document.createElement('form');
-        element.method = 'GET';
-        element.action = 'lab2';
-        element.type = 'hidden';
-
-        element.innerHTML = "<input type='hidden' name='x' value="+ x +">"+
-            "<input type='hidden' name='y' value="+ y +">" +
-            "<input type='hidden' name='r' value=" + r + ">";
-
-        document.body.appendChild(element);
-        element.submit();
+        $.ajax({
+            type: 'GET',
+            url: `lab2?x=${x}&y=${y}&r=${r}&control_value=form`,
+            success: function (response) {
+                location.reload();
+            }
+        });
     }else {
         $.growl.error({ message: "Проверьте правильность введённых данных!" });
     }

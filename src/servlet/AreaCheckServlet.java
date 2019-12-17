@@ -14,17 +14,18 @@ import java.io.IOException;
 public class AreaCheckServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        resp.setContentType("text/html;charset=UTF-8");
+
         HttpSession session = req.getSession();
         Point userPoint = (Point) session.getAttribute("point");
 
         if (userPoint.checkArea()) {
-            userPoint.setResult("included");
-            session.setAttribute("answer",userPoint);
+            userPoint.setResult("Входит");
         }else {
-            userPoint.setResult("not included");
-            session.setAttribute("answer",userPoint);
+            userPoint.setResult("Не входит");
         }
-        req.getRequestDispatcher("result.jsp").forward(req,resp);
-        session.removeAttribute("");
+        session.setAttribute("answer",userPoint);
+
+        resp.sendRedirect("lab2");
     }
 }

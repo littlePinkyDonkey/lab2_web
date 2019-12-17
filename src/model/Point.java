@@ -59,6 +59,8 @@ public class Point {
 
     @Override
     public String toString() {
-        return "{x: " + this.x + ", y: " + this.y + ", r: " + this.r + "} ";
+        //{"x":1,"y":5,"r":0}
+        return "{\"x\":" + this.x + ",\"y\":" + this.y
+                + ",\"r\":" + this.r + ",\"result\":\"" + this.result + "\"}";
     }
 }
