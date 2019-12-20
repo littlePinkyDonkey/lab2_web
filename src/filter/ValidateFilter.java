@@ -33,7 +33,7 @@ public class ValidateFilter implements Filter {
             double r = Double.parseDouble(r_value);
 
             if ((X_VALUES.contains(x)) && (y > -3 && y < 5) && (r > 2 && r < 5)){
-                session.setAttribute("point",new Point(x,y,r));
+                servletRequest.setAttribute("point",new Point(x,y,r));
                 filterChain.doFilter(servletRequest,servletResponse);
             }else throw new ClassCastException();
         }catch (NullPointerException | ClassCastException e){

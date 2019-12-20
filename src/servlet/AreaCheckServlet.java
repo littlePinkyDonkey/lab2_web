@@ -17,7 +17,7 @@ public class AreaCheckServlet extends HttpServlet {
         resp.setContentType("text/html;charset=UTF-8");
 
         HttpSession session = req.getSession();
-        Point userPoint = (Point) session.getAttribute("point");
+        Point userPoint = (Point) req.getAttribute("point");
 
         if (userPoint.checkArea()) {
             userPoint.setResult("Входит");

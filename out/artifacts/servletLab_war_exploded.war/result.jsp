@@ -11,30 +11,33 @@
 <html>
 <head>
     <title>Title</title>
-
-    <link href="styles/main.css" type="text/css" rel="stylesheet">
 </head>
 <body>
-    <jsp:setProperty name="historyBean" property="currentPoint" value="${sessionScope.answer}"/>
-      <div id="message">
-        <table border="1" cellpadding="5">
-          <tr>
-            <th>X</th>
-            <th>Y</th>
-            <th>R</th>
-            <th>Result</th>
-          </tr>
-          <c:forEach items="${historyBean.history}" var="element" varStatus="status">
-            <tr>
-              <td>${element.x}</td>
-              <td>${element.y}</td>
-              <td>${element.r}</td>
-              <td>${element.result}</td>
-            </tr>
-          </c:forEach>
-        </table>
-      </div>
+<canvas id="canvas" style="background-color: white; border-style: solid;">Not supported</canvas>
 
-<a href="lab2">back</a>
+<script>
+  let size =150;
+
+  let canvas = document.getElementById('canvas');
+  let context = canvas.getContext('2d');
+
+  canvas.width = size;
+  canvas.height = size;
+
+  context.beginPath();
+  context.moveTo(size/2,size);
+  context.lineTo(size/2,0);
+  context.moveTo(0,size/2);
+  context.lineTo(size,size/2);
+  context.stroke();
+  context.closePath();
+
+  context.fillStyle = 'red';
+  canvas.addEventListener('mousedown', function (e) {
+    context.beginPath();
+    context.arc(e.clientX,e.clientY,5,0,Math.PI*2);
+    context.fill();
+  });
+</script>
 </body>
 </html>

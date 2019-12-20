@@ -1,6 +1,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <jsp:useBean id="constraintsBean" scope="application" class="beans.ConstraintsBean"/>
-<jsp:useBean id="historyBean" scope="application" class="beans.ResultBean"/>
+<jsp:useBean id="historyBean" scope="session" class="beans.ResultBean"/>
 <%--
   Created by IntelliJ IDEA.
   User: andrei
@@ -68,6 +68,7 @@
     </div>
   </div>
   <script>
+      let hist_array = <jsp:getProperty name="historyBean" property="history"/>;
       let size =150;
 
       let canvas = document.getElementById('canvas');

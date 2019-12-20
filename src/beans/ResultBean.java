@@ -3,20 +3,22 @@ package beans;
 import model.Point;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 public class ResultBean implements Serializable {
     private static final long serialVersionUID = 2041275512219239990L;
 
-    private Set<Point> history = new HashSet<>();
+    private List<Point> history = new ArrayList<>();
     private Point currentPoint;
 
     public ResultBean(){
 
     }
 
-    public Set<Point> getHistory() {
+    public List<Point> getHistory() {
         return history;
     }
     public Point getCurrentPoint() {
