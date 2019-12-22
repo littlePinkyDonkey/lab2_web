@@ -21,6 +21,5 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" scope="PROVIDED" name="JBoss 18.0.0.Final1" level="application_server_libraries" />
     <orderEntry type="library" name="jquery-1.8.3" level="application" />
-    <orderEntry type="library" name="com.google.code.gson:gson:2.8.6" level="project" />
   </component>
 </module>

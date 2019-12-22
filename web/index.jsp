@@ -46,7 +46,6 @@
         </div>
 
         <div id="result-message">
-            <jsp:setProperty name="historyBean" property="currentPoint" value="${sessionScope.answer}"/>
             <table border="1" cellpadding="5" width="350" id="result-table">
                 <tr>
                     <th>X</th>
