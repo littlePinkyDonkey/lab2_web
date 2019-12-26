@@ -19,37 +19,42 @@ public class AreaCheckServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        try{
-            resp.setContentType("text/html;charset=UTF-8");
+        resp.setContentType("text/html;charset=UTF-8");
 
-            HttpSession session = req.getSession();
-            Point userPoint = validate(req.getParameter("x"),
-                    req.getParameter("y"),req.getParameter("r"));
+        HttpSession session = req.getSession();
+        Point userPoint = validate(req.getParameter("x"),
+                req.getParameter("y"),req.getParameter("r"));
 
+        if (userPoint.getResult().equals("correct")){
             if (userPoint.checkArea()) {
                 userPoint.setResult("Входит");
             }else {
                 userPoint.setResult("Не входит");
             }
-            ResultBean resultBean = (ResultBean)session.getAttribute("historyBean");
-            resultBean.setCurrentPoint(userPoint);
-            session.setAttribute("historyBean",resultBean);
-        }catch (NumberFormatException | NullPointerException e){
-
-        }finally {
-            req.getRequestDispatcher("index.jsp").forward(req,resp);
         }
+        ResultBean resultBean = (ResultBean)session.getAttribute("historyBean");
+        resultBean.setCurrentPoint(userPoint);
+        session.setAttribute("historyBean",resultBean);
+        req.getRequestDispatcher("index.jsp").forward(req,resp);
     }
 
-    private synchronized Point validate(String x_value, String y_value, String r_value) throws NumberFormatException{
-        double x = Double.parseDouble(x_value);
-        double y = Double.parseDouble(y_value);
-        double r = Double.parseDouble(r_value);
+    private synchronized Point validate(String x_value, String y_value, String r_value){
+        Point point = new Point();
+        try{
+            double x = Double.parseDouble(x_value);
+            point.setX(x);
+            double y = Double.parseDouble(y_value);
+            point.setY(y);
+            double r = Double.parseDouble(r_value);
+            point.setR(r);
 
-        if ((X_VALUES.contains(x)) && (y > -3 && y < 5) && (r > 2 && r < 5)){
-            return new Point(x,y,r);
+            if ((x > -3 && x < 5) && (y > -3 && y < 5) && (r > 2 && r < 5)){
+                point.setResult("correct");
+                return point;
+            }else throw new NumberFormatException();
+        }catch (NumberFormatException e){
+            point.setResult("Данные не входят в область допустимых значений");
+            return point;
         }
-
-        return null;
     }
 }
