@@ -31,9 +31,6 @@ body{
 }
 #canvas_block{
     margin-top: 10px;
-    margin-left: 45px;
-    display: flex;
-    justify-content: center;
 }
 .block{
     margin-top: 20px;

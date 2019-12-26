@@ -6,6 +6,7 @@ public class Point {
     private double r;
     private String result;
 
+    public Point(){}
     public Point(double x, double y, double r) {
         this.x = x;
         this.y = y;
@@ -27,6 +28,15 @@ public class Point {
 
     public void setResult(String result){
         this.result = result;
+    }
+    public void setX(double x) {
+        this.x = x;
+    }
+    public void setY(double y) {
+        this.y = y;
+    }
+    public void setR(double r) {
+        this.r = r;
     }
 
     public boolean checkArea(){
@@ -59,6 +69,8 @@ public class Point {
 
     @Override
     public String toString() {
-        return "{x: " + this.x + ", y: " + this.y + ", r: " + this.r + "} ";
+        //{"x":1,"y":5,"r":0}
+        return "{\"x\":" + this.x + ",\"y\":" + this.y
+                + ",\"r\":" + this.r + ",\"result\":\"" + this.result + "\"}";
     }
 }

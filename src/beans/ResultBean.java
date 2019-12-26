@@ -10,14 +10,14 @@ public class ResultBean implements Serializable {
     private static final long serialVersionUID = 2041275512219239990L;
     
 
-    private HashSet<Point> history = new HashSet<>();
+    private List<Point> history = new ArrayList<>();
     private Point currentPoint;
 
     public ResultBean(){
 
     }
 
-    public Set<Point> getHistory() {
+    public List<Point> getHistory() {
         return history;
     }
     public Point getCurrentPoint() {
@@ -25,6 +25,7 @@ public class ResultBean implements Serializable {
     }
 
     public void setCurrentPoint(Point currentPoint) {
-        this.history.add(currentPoint);
+        if (currentPoint != null)
+            this.history.add(currentPoint);
     }
 }
