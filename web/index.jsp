@@ -13,7 +13,7 @@
   <head>
     <title>Lab 2</title>
 
-<%--    <link href="styles/main.css" type="text/css" rel="stylesheet">--%>
+    <link href="styles/main.css" type="text/css" rel="stylesheet">
     <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
     <script src="scripts/main.js"></script>
 
@@ -30,7 +30,8 @@
 
         <div id="canvas_block"></div>
         <canvas id="my-canvas" height="222" width="222"
-                style="background: url('images/image.png') no-repeat;background-size: contain;">Not supported</canvas>
+                style="background: url('images/image.png') no-repeat;
+                background-size: contain; justify-content: center">Not supported</canvas>
         <div class="blockX">
           X :
           <c:forEach items="${constraintsBean.available_x}" var="x" varStatus="status">
@@ -69,76 +70,75 @@
   </div>
   <script>
       const A = 222;
-      const R = 80;
+      const R = 85;
 
       window.onload = () => {
           $.growl.notice({message: "Для более точных данных рекомендуется использовать форму"});
-          redraw();
+          document.getElementById('r_value').value = localStorage.getItem('r');
+          draw();
       };
-      document.ready = () => {
-          $("#my-canvas").on("click",function (event) {
-              let h = document.getElementById("my-canvas").offsetHeight;
-              let x_canvas = event.pageX - this.offsetLeft;
-              let y_canvas = event.pageY - this.offsetTop;
+      $("#my-canvas").on("click",function (event) {
+          let h = document.getElementById("my-canvas").offsetHeight;
+          let x_canvas = event.pageX - this.offsetLeft;
+          let y_canvas = event.pageY - this.offsetTop;
 
-              let r = document.getElementById("r_value").value;
-              let client_x = normalizeX(x_canvas, h, r);
-              let client_y = normalizeY(y_canvas, h, r);
+          let r = document.getElementById("r_value").value.replace(',','.');
+          let client_x = getNormalX(x_canvas, h, r);
+          let client_y = getNormalY(y_canvas, h, r);
 
-              if(r != "" && !isNaN(r) && r > 2 && r < 5){
-                  localStorage.setItem('r',r);
-                  canvasSend(client_x,client_y,r)
-              }else{
-                  $.growl.error({ message: "Проверьте правильность введённых данных!" });
-              }
-          });
-      };
+          if(r != "" && !isNaN(r) && r > 2 && r < 5){
+              localStorage.setItem('r',r);
+              canvasSend(client_x,client_y,r)
+          }else{
+              $.growl.error({ message: "Проверьте правильность введённых данных!" });
+          }
+      });
 
-      function normalizeX(x, a, r){
-          let x_server = ((x-0.5*a)/(R/r));
-          x_server = x_server.toFixed(4);
-          return x_server;
+      function getNormalX(x, h, r){
+          let x_for_counting = ((x-0.5*h)/(R/r));
+          x_for_counting = x_for_counting.toFixed(4);
+          return x_for_counting;
       }
-      function normalizeY(y, a, r){
-          let y_server = -(A/a)*((y-0.5*a)/(R/r));
-          y_server = y_server.toFixed(4);
-          return y_server;
+      function getNormalY(y, h, r){
+          let y_for_counting = -(A/h)*((y-0.5*h)/(R/r));
+          y_for_counting = y_for_counting.toFixed(4);
+          return y_for_counting;
       }
 
-      function chartX(x, a, r){
-          let x_client = ((x* (R/r)+0.5 * A));
-          x_client = x_client.toFixed(4);
-//console.log("x_client: " + x_client);
-          return x_client;
+      function getChartX(x, h, r){
+          let x_for_drawing = ((x* (R/r)+0.5 * A));
+          x_for_drawing = x_for_drawing.toFixed(4);
+          return x_for_drawing;
       }
-      function chartY(y, a, r){
-          let y_client = -((y* (R/r)-0.5 * A));
-          y_client = y_client.toFixed(4);
-//console.log("y_client: " + y_client);
-          return y_client;
+      function getChartY(y, h, r){
+          let y_for_drawing = -((y* (R/r)-0.5 * A));
+          y_for_drawing = y_for_drawing.toFixed(4);
+          return y_for_drawing;
       }
 
       let history = <jsp:getProperty name="historyBean" property="history"/>;
 
-      function redraw(){
+      function draw(){
           let r = localStorage.getItem('r');
           let canvas = document.getElementById('my-canvas');
           let context = canvas.getContext('2d');
           context.clearRect(0,0,222,222);
+
           Array.from(history).forEach( p => {
               let h = document.getElementById("my-canvas").offsetHeight;
-              let xClient = chartX(parseFloat(p.x), h, parseInt(r));
-              let yClient = chartY(parseFloat(p.y), h, parseInt(r));
+              let xClient = getChartX(parseFloat(p.x), h, parseInt(r));
+              let yClient = getChartY(parseFloat(p.y), h, parseInt(r));
 
               let canvas = document.getElementById("my-canvas");
               let context = canvas.getContext("2d");
               context.beginPath();
 
-              if(parseInt(r) != parseInt(p.r)){
+              if(parseFloat(r) !== parseFloat(p.r)){
                   context.strokeStyle = 'black';
                   context.fillStyle = 'black';
               }else{
-                  if(p.result === 'Входит'){
+
+                  if(checkArea(p.x,p.y,p.r)){
                       context.strokeStyle = 'green';
                       context.fillStyle = 'green';
                   }else{
@@ -147,12 +147,21 @@
                   }
               }
 
-
               context.arc(xClient, yClient, 1.5, 0, 2 * Math.PI);
               context.closePath();
               context.fill();
               context.stroke();
           });
+      }
+      function checkArea(x,y,r) {
+          if (x>= 0){
+              if (y>=0 && y<=r/2 && x<=r &&
+                  Math.pow(x,2)+Math.pow(y,2)<=Math.pow(r,2)){
+                  return true;
+              }else return y <= 0 && Math.pow(x, 2) + Math.pow(y, 2) < Math.pow(r / 2, 2);
+          }else {
+              return x >= -r && y >= 0 && y <= r / 2;
+          }
       }
   </script>
   </body>

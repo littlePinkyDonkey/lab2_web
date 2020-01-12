@@ -19,7 +19,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" scope="PROVIDED" name="JBoss 18.0.0.Final1" level="application_server_libraries" />
     <orderEntry type="library" name="jquery-1.8.3" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="JBoss 18.0.0.Final1" level="application_server_libraries" />
   </component>
 </module>

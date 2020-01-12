@@ -8,23 +8,28 @@
   <component name="ChangeListManager">
     <list default="true" id="df9fc51a-74ce-465f-871d-9ba994411a92" name="Default Changelist" comment="">
 <<<<<<< HEAD
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/src/beans/ResultBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/beans/ResultBean.java" afterDir="false" />
 =======
+=======
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/servletLab_war.xml" afterDir="false" />
+>>>>>>> lab2_dev
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/servletLab_war_exploded.war/WEB-INF/classes/TEstFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/servletLab_war_exploded.war/WEB-INF/classes/model/Point.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/servletLab_war_exploded.war/WEB-INF/classes/model/Point.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/servletLab_war_exploded.war/WEB-INF/classes/servlet/AreaCheckServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/servletLab_war_exploded.war/WEB-INF/classes/servlet/AreaCheckServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/servletLab_war_exploded.war/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/servletLab_war_exploded.war/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/servletLab_war_exploded.war/1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/servletLab_war_exploded.war/area.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/servletLab_war_exploded.war/image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/servletLab_war_exploded.war/index.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/servletLab_war_exploded.war/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/servletLab_war_exploded.war/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/servletLab_war_exploded.war/scripts/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/servletLab_war_exploded.war/scripts/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/servletLab/TEstFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/servletLab/model/Point.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/servletLab/model/Point.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/servletLab/servlet/AreaCheckServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/servletLab/servlet/AreaCheckServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Point.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/servlet/AreaCheckServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlet/AreaCheckServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/servletLab_war_exploded.war/scripts/canvas.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/servletLab_war_exploded.war/styles/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/servletLab_war_exploded.war/styles/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/servletLab.iml" beforeDir="false" afterPath="$PROJECT_DIR$/servletLab.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/images/image.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/images/image.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/web/scripts/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/scripts/main.js" afterDir="false" />
+>>>>>>> lab2_dev
+=======
+      <change beforePath="$PROJECT_DIR$/web/styles/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/styles/main.css" afterDir="false" />
 >>>>>>> lab2_dev
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -42,34 +47,46 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="69" column="9" selection-start-line="69" selection-start-column="9" selection-end-line="69" selection-end-column="9" />
-              <folding>
-                <element signature="n#script#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="e#2721#2742#0#HTML" />
-                <element signature="e#2755#3557#0#HTML" />
-                <element signature="e#3592#3706#0#HTML" />
-                <element signature="e#3739#3860#0#HTML" />
-                <element signature="e#3890#4047#0#HTML" />
-                <element signature="e#4076#4234#0#HTML" />
-                <element signature="e#4334#5620#0#HTML" />
-              </folding>
+            <state relative-caret-position="2295">
+              <caret line="136" column="44" selection-start-line="136" selection-start-column="44" selection-end-line="136" selection-end-column="44" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/scripts/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/images/image.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/servlet/AreaCheckServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="35" selection-start-line="35" selection-end-line="35" />
+            <state relative-caret-position="204">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1577394019750" expanded="true" signature="1349:1405" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -78,10 +95,14 @@
         <entry file="file://$PROJECT_DIR$/src/servlet/ControllerServlet.java">
           <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
             <state relative-caret-position="170">
               <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
 =======
             <state relative-caret-position="133">
+=======
+            <state relative-caret-position="153">
+>>>>>>> lab2_dev
               <caret line="14" selection-start-line="14" selection-end-line="14" />
 >>>>>>> lab2_dev
               <folding>
@@ -109,6 +130,7 @@
       <find>getServletContext</find>
       <find>getServletConfig</find>
       <find>inne</find>
+      <find>background-color</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -124,7 +146,6 @@
         <option value="$PROJECT_DIR$/src/ControllerServlet.java" />
         <option value="$PROJECT_DIR$/src/beans/ConstraintsBean.java" />
         <option value="$PROJECT_DIR$/web/jquery.growl/javascripts/jquery.growl.js" />
-        <option value="$PROJECT_DIR$/web/styles/main.css" />
         <option value="$PROJECT_DIR$/web/result.jsp" />
         <option value="$PROJECT_DIR$/src/beans/ResultBean.java" />
         <option value="$PROJECT_DIR$/src/filter/ValidateFilter.java" />
@@ -133,13 +154,18 @@
         <option value="$PROJECT_DIR$/src/servlet/ControllerServlet.java" />
         <option value="$PROJECT_DIR$/src/model/Point.java" />
         <option value="$PROJECT_DIR$/web/canvas.js" />
-        <option value="$PROJECT_DIR$/src/servlet/AreaCheckServlet.java" />
         <option value="$PROJECT_DIR$/web/index.html" />
         <option value="$PROJECT_DIR$/web/1.html" />
         <option value="$PROJECT_DIR$/web/scripts/main.js" />
         <option value="$PROJECT_DIR$/web/index.jsp" />
+        <option value="$PROJECT_DIR$/web/styles/main.css" />
+        <option value="$PROJECT_DIR$/src/servlet/AreaCheckServlet.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
       </list>
     </option>
+  </component>
+  <component name="JavaeeView">
+    <option name="showModules" value="false" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="948" />
@@ -153,8 +179,11 @@
     </navigator>
     <panes>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
       <pane id="Scope" />
+>>>>>>> lab2_dev
+=======
 >>>>>>> lab2_dev
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
@@ -196,15 +225,25 @@
               <item name="servletLab" type="b2602c69:ProjectViewProjectNode" />
               <item name="servletLab" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="styles" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="servletLab" type="b2602c69:ProjectViewProjectNode" />
+              <item name="servletLab" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <pane id="Scope" />
 =======
+>>>>>>> lab2_dev
+=======
+      <pane id="Scope" />
 >>>>>>> lab2_dev
     </panes>
   </component>
@@ -218,11 +257,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jsx.switch.disabled" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../untitled" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/trash-sorter-dev/lab2" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
@@ -248,7 +287,7 @@
   </component>
   <component name="RunManager">
     <configuration name="JBoss 18.0.0.Final1" type="JBossConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="JBoss 18.0.0.Final1" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/servletLab_war_exploded/lab2" />
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:16716/servletLab_war_exploded" />
       <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <deployment>
         <artifact name="servletLab:war exploded">
@@ -365,25 +404,49 @@
       <workItem from="1577124294435" duration="7000" />
       <workItem from="1577370147444" duration="25175000" />
       <workItem from="1577400777301" duration="2144000" />
+<<<<<<< HEAD
+>>>>>>> lab2_dev
+=======
+      <workItem from="1577403696386" duration="98000" />
+      <workItem from="1577405229695" duration="31000" />
+      <workItem from="1577406062174" duration="149000" />
+      <workItem from="1577434804805" duration="4131000" />
+      <workItem from="1577999375337" duration="431000" />
+      <workItem from="1578042501171" duration="2266000" />
+      <workItem from="1578060090290" duration="653000" />
+      <workItem from="1578152762383" duration="13000" />
+      <workItem from="1578165136277" duration="4078000" />
+      <workItem from="1578169776124" duration="269000" />
+      <workItem from="1578565675455" duration="7062000" />
+      <workItem from="1578664605943" duration="2130000" />
+      <workItem from="1578678316987" duration="275000" />
+      <workItem from="1578818988748" duration="1744000" />
 >>>>>>> lab2_dev
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="66750000" />
 =======
     <option name="totallyTimeSpent" value="136485000" />
 >>>>>>> lab2_dev
+=======
+    <option name="totallyTimeSpent" value="159815000" />
+>>>>>>> lab2_dev
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <editor active="true" />
     <layout>
+<<<<<<< HEAD
 <<<<<<< HEAD
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49704143" visible="true" weight="0.24696356" />
 =======
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49704143" visible="true" weight="0.25506073" />
+>>>>>>> lab2_dev
+=======
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49704143" visible="true" weight="0.23643725" />
 >>>>>>> lab2_dev
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
@@ -404,9 +467,9 @@
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50040483" side_tool="true" weight="0.39964476" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.3285968" />
-      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.3285968" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="bottom" id="Version Control" order="14" weight="0.3285968" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -512,13 +575,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.ideaLibSources/jboss-servlet-api_4.0_spec-2.0.0.Final-sources.jar!/javax/servlet/GenericServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="141" column="26" selection-start-line="141" selection-start-column="26" selection-end-line="141" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/jquery.growl/stylesheets/jquery.growl.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1448" />
@@ -535,13 +591,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="869">
           <caret line="99" column="22" selection-start-line="99" selection-start-column="22" selection-end-line="99" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/styles/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="21" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -567,24 +616,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/TEstFilter.java" />
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.ideaLibSources/jboss-servlet-api_4.0_spec-2.0.0.Final-sources.jar!/javax/servlet/http/HttpServletRequest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="179">
           <caret line="238" column="18" selection-start-line="238" selection-start-column="18" selection-end-line="238" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.ideaLibSources/jboss-servlet-api_4.0_spec-2.0.0.Final-sources.jar!/javax/servlet/http/HttpServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-603">
-          <caret line="495" column="33" lean-forward="true" selection-start-line="495" selection-start-column="33" selection-end-line="495" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -602,49 +637,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/area.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Point.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="73" column="78" selection-start-line="73" selection-start-column="78" selection-end-line="73" selection-end-column="78" />
-          <folding>
-            <element signature="method#Point#0;class#Point#0" />
-            <element signature="method#hashCode#0;class#Point#0" />
-            <element signature="method#equals#0;class#Point#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
-          <folding>
-            <element signature="n#style#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/scripts/canvas.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-517">
-          <caret line="121" column="9" selection-start-line="121" selection-start-column="9" selection-end-line="121" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/AreaCheckServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1577394019750" expanded="true" signature="1349:1405" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/web/area.png" />
+    <entry file="file://$PROJECT_DIR$/web/1.html" />
+    <entry file="file://$PROJECT_DIR$/web/scripts/canvas.js" />
     <entry file="file://$PROJECT_DIR$/web/jquery.growl/javascripts/jquery.growl.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-391">
@@ -652,26 +647,86 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/images/image.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/scripts/main.js">
+    <entry file="file://$PROJECT_DIR$/web/index.html" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/javascript/extLibs/http_code.jquery.com_jquery-1.8.3.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+        <state relative-caret-position="103">
+          <caret line="357" column="12" selection-start-line="357" selection-start-column="12" selection-end-line="357" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Point.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="43" column="27" lean-forward="true" selection-start-line="43" selection-start-column="27" selection-end-line="43" selection-end-column="27" />
           <folding>
-            <element signature="n#!!block;n#getValues#0" />
+            <element signature="method#hashCode#0;class#Point#0" />
+            <element signature="method#equals#0;class#Point#0" />
+            <element signature="method#toString#0;class#Point#0" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="jar://$USER_HOME$/.ideaLibSources/jboss-servlet-api_4.0_spec-2.0.0.Final-sources.jar!/javax/servlet/http/HttpServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="62" column="48" lean-forward="true" selection-start-line="62" selection-start-column="48" selection-end-line="62" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ideaLibSources/jboss-servlet-api_4.0_spec-2.0.0.Final-sources.jar!/javax/servlet/ServletConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-254">
+          <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ideaLibSources/jboss-servlet-api_4.0_spec-2.0.0.Final-sources.jar!/javax/servlet/GenericServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="49" column="61" lean-forward="true" selection-start-line="49" selection-start-column="61" selection-end-line="49" selection-end-column="61" />
+          <folding>
+            <element signature="e#4618#4619#0" expanded="true" />
+            <element signature="e#4647#4648#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/styles/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2295">
+          <caret line="136" column="44" selection-start-line="136" selection-start-column="44" selection-end-line="136" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/scripts/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/images/image.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/servlet/ControllerServlet.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
 <<<<<<< HEAD
         <state relative-caret-position="170">
           <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
 =======
         <state relative-caret-position="133">
+=======
+        <state relative-caret-position="153">
+>>>>>>> lab2_dev
           <caret line="14" selection-start-line="14" selection-end-line="14" />
 >>>>>>> lab2_dev
           <folding>
@@ -680,35 +735,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.html">
+    <entry file="file://$PROJECT_DIR$/src/servlet/AreaCheckServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1105">
-          <caret line="65" column="4" lean-forward="true" selection-start-line="65" selection-start-column="4" selection-end-line="65" selection-end-column="4" />
+        <state relative-caret-position="204">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
           <folding>
-            <element signature="n#style#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#2414#2528#0" />
-            <element signature="e#2561#2682#0" />
-            <element signature="e#2712#2869#0" />
-            <element signature="e#2898#3056#0" />
-            <element signature="e#3156#4442#0" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="69" column="9" selection-start-line="69" selection-start-column="9" selection-end-line="69" selection-end-column="9" />
-          <folding>
-            <element signature="n#script#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="e#2721#2742#0#HTML" />
-            <element signature="e#2755#3557#0#HTML" />
-            <element signature="e#3592#3706#0#HTML" />
-            <element signature="e#3739#3860#0#HTML" />
-            <element signature="e#3890#4047#0#HTML" />
-            <element signature="e#4076#4234#0#HTML" />
-            <element signature="e#4334#5620#0#HTML" />
-          </folding>
+        <state relative-caret-position="68">
+          <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -723,7 +763,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -789,7 +828,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>com.google.code.gson:gson:2.8.6</last-edited>
+          <last-edited>Java EE 6 (2)</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
