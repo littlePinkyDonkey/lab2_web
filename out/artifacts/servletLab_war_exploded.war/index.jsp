@@ -2,13 +2,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <jsp:useBean id="constraintsBean" scope="application" class="beans.ConstraintsBean"/>
 <jsp:useBean id="historyBean" scope="session" class="beans.ResultBean"/>
-<%--
-  Created by IntelliJ IDEA.
-  User: andrei
-  Date: 03.12.2019
-  Time: 14:44
-  To change this template use File | Settings | File Templates.
---%>
+
 <html>
   <head>
     <title>Lab 2</title>
@@ -16,6 +10,7 @@
     <link href="styles/main.css" type="text/css" rel="stylesheet">
     <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
     <script src="scripts/main.js"></script>
+      <script src="scripts/canvas.js"></script>
 
     <script src="jquery.growl/javascripts/jquery.growl.js" type="text/javascript"></script>
     <link href="jquery.growl/stylesheets/jquery.growl.css" rel="stylesheet" type="text/css" />
@@ -40,7 +35,7 @@
         </div>
         <div class="block">
           <input type="text" name="y" required="required" placeholder="Y: (-3...5)" id="y_value" maxlength="5" width="10px">
-          <input type="text" name="r" required="required" placeholder="R: (2...5)" id="r_value" maxlength="5">
+          <input type="text" name="r" required="required" oninput="getR()" placeholder="R: (2...5)" id="r_value" maxlength="5">
         </div>
 
         <div id="submit_block">
@@ -68,6 +63,59 @@
 
     </div>
   </div>
+
+<%--  <script>--%>
+<%--      const canvas = document.getElementById("my-canvas");--%>
+<%--      const ctx  =canvas.getContext('2d');--%>
+<%--      let points = <jsp:getProperty name="historyBean" property="history"/>;--%>
+
+<%--      function getR(){--%>
+
+<%--      }--%>
+
+<%--      window.onload = () => {--%>
+
+<%--          let r = document.getElementById('r_value').value.replace(',','.');--%>
+<%--          if (r === ''){--%>
+<%--              r = 4;--%>
+<%--          }--%>
+<%--          localStorage.setItem('r',r);--%>
+
+<%--          ctx.clearRect(0, 0, canvas.width, canvas.height);--%>
+<%--          drawFigure(ctx, r);--%>
+<%--          axises(ctx);--%>
+<%--          rMarks(ctx);--%>
+<%--          drawPoints(ctx, points);--%>
+<%--      };--%>
+<%--      function redraw() {--%>
+<%--          let r = document.getElementById("r_value").value.replace(',','.');--%>
+
+<%--          ctx.clearRect(0, 0, canvas.width, canvas.height);--%>
+<%--          drawFigure(ctx, r);--%>
+<%--          axises(ctx);--%>
+<%--          rMarks(ctx);--%>
+<%--          drawPoints(ctx, points);--%>
+<%--      }--%>
+
+<%--      canvas.onclick = (e) => {--%>
+
+<%--          let rect = canvas.getBoundingClientRect();--%>
+<%--          let canx = (e.clientX - rect.left - LINE_WIDTH / 2);--%>
+<%--          let cany = (e.clientY - rect.top - LINE_WIDTH / 2);--%>
+
+<%--          r = document.getElementById("r_value").value.replace(',','.');--%>
+<%--          sessionStorage.setItem('r',r);--%>
+
+<%--          if (r !== "" && !isNaN(r) && r > 2 && r < 5) {--%>
+<%--              let res = fromCanvas({"x": canx, "y": cany, "r": r});--%>
+<%--              canvasSend(res.x, res.y, r);--%>
+<%--          } else {--%>
+<%--              $.growl.notice({message: "Проверьте радиус"});--%>
+<%--          }--%>
+<%--      }--%>
+
+<%--  </script>--%>
+
   <script>
       const A = 222;
       const R = 85;
@@ -137,11 +185,14 @@
                   context.strokeStyle = 'black';
                   context.fillStyle = 'black';
               }else{
-
-                  if(checkArea(p.x,p.y,p.r)){
+                  let result = checkArea(p.x,p.y,p.r);
+                  if(result === 'orange'){
+                      context.strokeStyle = 'orange';
+                      context.fillStyle = 'orange';
+                  }else if (result === true) {
                       context.strokeStyle = 'green';
                       context.fillStyle = 'green';
-                  }else{
+                  } else{
                       context.strokeStyle = 'red';
                       context.fillStyle = 'red';
                   }
@@ -154,14 +205,11 @@
           });
       }
       function checkArea(x,y,r) {
-          if (x>= 0){
-              if (y>=0 && y<=r/2 && x<=r &&
-                  Math.pow(x,2)+Math.pow(y,2)<=Math.pow(r,2)){
-                  return true;
-              }else return y <= 0 && Math.pow(x, 2) + Math.pow(y, 2) < Math.pow(r / 2, 2);
-          }else {
-              return x >= -r && y >= 0 && y <= r / 2;
-          }
+          let halfR = r / 2;
+
+          return x >= 0 && y >= 0 && y < halfR - x / 2 ||
+              x >= 0 && y <= 0 && x * x + y * y < halfR * halfR ||
+              x <= 0 && y >= 0 && x >= -r && y <= halfR;
       }
   </script>
   </body>
