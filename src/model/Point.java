@@ -39,15 +39,12 @@ public class Point {
         this.r = r;
     }
 
-    public boolean checkArea(){
-        if (x>= 0){
-            if (y>=0 && y<=r/2 && x<=r &&
-                    Math.pow(x,2)+Math.pow(y,2)<=Math.pow(r,2)){
-                return true;
-            }else return y <= 0 && Math.pow(x, 2) + Math.pow(y, 2) < Math.pow(r / 2, 2);
-        }else {
-            return x >= -r && y >= 0 && y <= r / 2;
-        }
+    public boolean checkArea() {
+        double halfR = r / 2;
+
+        return x >= 0 && y >= 0 && y < halfR - x / 2 ||
+                x >= 0 && y <= 0 && x * x + y * y < halfR * halfR ||
+                x <= 0 && y >= 0 && x >= -r && y <= halfR;
     }
 
     @Override
