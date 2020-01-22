@@ -6,18 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="df9fc51a-74ce-465f-871d-9ba994411a92" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/servletLab_war_exploded.war/WEB-INF/classes/model/Point.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/servletLab_war_exploded.war/WEB-INF/classes/model/Point.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/servletLab_war_exploded.war/WEB-INF/classes/servlet/AreaCheckServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/servletLab_war_exploded.war/WEB-INF/classes/servlet/AreaCheckServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/servletLab_war_exploded.war/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/servletLab_war_exploded.war/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/servletLab_war_exploded.war/lab2.war" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/servletLab_war_exploded.war/lab2.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/servletLab/model/Point.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/servletLab/model/Point.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/servletLab/servlet/AreaCheckServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/servletLab/servlet/AreaCheckServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Point.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/servlet/AreaCheckServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlet/AreaCheckServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
-    </list>
+    <list default="true" id="df9fc51a-74ce-465f-871d-9ba994411a92" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,7 +25,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
+            <state relative-caret-position="476">
               <caret line="28" column="66" selection-start-line="28" selection-start-column="66" selection-end-line="28" selection-end-column="66" />
             </state>
           </provider>
@@ -46,7 +35,7 @@
         <entry file="file://$PROJECT_DIR$/src/servlet/AreaCheckServlet.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="413">
-              <caret line="38" column="26" lean-forward="true" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
+              <caret line="38" column="26" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -57,8 +46,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model/Point.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+            <state relative-caret-position="340">
+              <caret line="40" selection-start-line="40" selection-end-line="40" />
               <folding>
                 <element signature="method#Point#1;class#Point#0" />
                 <element signature="method#hashCode#0;class#Point#0" />
@@ -72,7 +61,7 @@
         <entry file="file://$PROJECT_DIR$/web/scripts/main.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
-              <caret line="22" column="16" lean-forward="true" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
+              <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
               <folding>
                 <element signature="n#!!block;n#getValues#0" />
                 <element signature="n#!!block;n#validate#0" />
@@ -84,8 +73,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/scripts/canvas.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="138" column="34" lean-forward="true" selection-start-line="138" selection-start-column="34" selection-end-line="138" selection-end-column="34" />
+            <state relative-caret-position="357">
+              <caret line="138" column="34" selection-start-line="138" selection-start-column="34" selection-end-line="138" selection-end-column="34" />
               <folding>
                 <element signature="n#!!block;n#drawArrow#0" />
                 <element signature="n#!!block;n#axises#0" />
@@ -184,7 +173,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -231,6 +219,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -426,16 +415,17 @@
       <workItem from="1579176122988" duration="57000" />
       <workItem from="1579255674222" duration="276000" />
       <workItem from="1579523093813" duration="203000" />
+      <workItem from="1579607994138" duration="162000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="175964000" />
+    <option name="totallyTimeSpent" value="176126000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49704143" visible="true" weight="0.2437247" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49704143" visible="true" weight="0.24777327" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -670,23 +660,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="28" column="66" selection-start-line="28" selection-start-column="66" selection-end-line="28" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/ControllerServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -694,10 +667,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/scripts/canvas.js">
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="66" selection-start-line="28" selection-start-column="66" selection-end-line="28" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Point.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+          <folding>
+            <element signature="method#Point#1;class#Point#0" />
+            <element signature="method#hashCode#0;class#Point#0" />
+            <element signature="method#equals#0;class#Point#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/scripts/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
-          <caret line="138" column="34" lean-forward="true" selection-start-line="138" selection-start-column="34" selection-end-line="138" selection-end-column="34" />
+          <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
+          <folding>
+            <element signature="n#!!block;n#getValues#0" />
+            <element signature="n#!!block;n#validate#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/scripts/canvas.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="138" column="34" selection-start-line="138" selection-start-column="34" selection-end-line="138" selection-end-column="34" />
           <folding>
             <element signature="n#!!block;n#drawArrow#0" />
             <element signature="n#!!block;n#axises#0" />
@@ -711,25 +714,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/scripts/main.js">
+    <entry file="file://$PROJECT_DIR$/src/servlet/ControllerServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="22" column="16" lean-forward="true" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
+        <state relative-caret-position="153">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
           <folding>
-            <element signature="n#!!block;n#getValues#0" />
-            <element signature="n#!!block;n#validate#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Point.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
-          <folding>
-            <element signature="method#Point#1;class#Point#0" />
-            <element signature="method#hashCode#0;class#Point#0" />
-            <element signature="method#equals#0;class#Point#0" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -737,7 +727,7 @@
     <entry file="file://$PROJECT_DIR$/src/servlet/AreaCheckServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="413">
-          <caret line="38" column="26" lean-forward="true" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
+          <caret line="38" column="26" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
